@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>인덱스</title>
+<script type="text/javascript" src="dist/js/jquery-3.3.1.min.js" ></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('.test > li').click(function(){
+			var aaa = $(this).index()
+			
+			$('.test > li:eq('+aaa+')').addClass('active')
+			var bbb = $(this)
+			
+			console.log(bbb[0]['draggable'])
+		})
+	});
+</script>
+	
+<style>
+
+</style>
+</head>
+<body>
+
+	<ul class="test">
+		<li><a href="#">1111</a></li>
+		<li><a href="#">2222</a></li>
+		<li><a href="#">3333</a></li>
+		<li><a href="#">4444</a></li>
+		<li><a href="#">5555</a></li>
+	</ul>
+	
+</body>
+</html>
